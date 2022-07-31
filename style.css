@@ -28,6 +28,17 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: rgba(229, 165, 93, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: var(--color-primary-varient);
+  border-radius: 0.25rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -617,7 +628,7 @@ footer {
   /* ===== HEADER ===== */
   header {
     height: fit-content;
-    padding: 10rem 0 12rem;
+    padding: 10rem 0 10rem;
     display: grid;
     place-items: center;
   }
@@ -636,9 +647,11 @@ footer {
   .header__image-lg {
     filter: saturate(1) brightness(1);
     border: 1rem solid var(--color-bg-2);
+    overflow: hidden;
     width: 100%;
     top: 0;
     left: 0;
+    border-radius: 15rem 15rem 0 0;
   }
 
   .empty {
@@ -757,7 +770,6 @@ footer {
     margin: 0 auto;
     margin-top: 7rem;
     overflow: hidden;
-    border-radius: 15rem 15rem 0 0;
   }
 
   .header__head {
